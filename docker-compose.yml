@@ -1,5 +1,5 @@
 services:
-  app:
+  vegetable-app:
     build: .
     image: vegetable-order-app-app 
     container_name:  vegetable-order-app-mongo-1
