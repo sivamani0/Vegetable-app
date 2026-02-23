@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vegetable-deployment
-  namespace: namespace-ns
+  namespace: siva-ns
 spec:
   replicas: 2
   selector:
