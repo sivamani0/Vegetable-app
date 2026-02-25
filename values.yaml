@@ -38,7 +38,7 @@ service:
   type: LoadBalancer
 
 
-# Mongo values (StatefulSet + Service)
+# Mongo values 
 
 mongo:
   replicas: 5
@@ -51,12 +51,18 @@ mongo:
   port: 27017
   storageClassName: retail-sc
   storage: 1Gi
+
+
+#mongo-service
   service:
     port: 27017
     targetPort: 27017
+  mongo:
+  service:
+    clusterIP: None
 
 
-# PVC values (if you use separate PVC)
+# PVC values 
 
 pvc:
   name: mongo-pvc
